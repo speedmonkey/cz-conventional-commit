@@ -43,7 +43,11 @@ module.exports = function(options) {
   var choices = map(types, function(type, key) {
     return {
       name:
-        rightPad(key + ':', length) + ' ' + type.emoji + ' ' + type.description,
+        rightPad(key + ':', length) +
+        ' ' +
+        type.emoji +
+        '. ' +
+        type.description,
       value: key
     };
   });
