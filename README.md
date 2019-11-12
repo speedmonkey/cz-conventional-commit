@@ -1,4 +1,4 @@
-# cz-conventional-changelog
+# cz-conventional-commit
 
 Status:
 [![npm version](https://img.shields.io/npm/v/cz-conventional-changelog.svg?style=flat-square)](https://www.npmjs.org/package/cz-conventional-changelog)
