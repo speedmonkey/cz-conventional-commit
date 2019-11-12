@@ -1,31 +1,30 @@
 'format cjs';
 
 var engine = require('./engine');
+// var conventionalCommitTypes = require('conventional-commit-types');
 var configLoader = require('commitizen').configLoader;
 
 var config = configLoader.load();
 var conventionalCommitTypes = {
   types: {
     feat: {
-      description: '💡' + ' ' + 'A new feature',
+      emoji: '💡',
+      description: 'A new feature',
       title: 'Features'
     },
     fix: {
-      description: '🐛' + ' ' + 'A bug fix',
+      emoji: '🐛',
+      description: 'A bug fix',
       title: 'Bug Fixes'
     },
     style: {
-      description:
-        '📦' +
-        ' ' +
-        'Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)',
+      emoji: '📦',
+      description: 'Changes that do not affect the meaning of the code',
       title: 'Styles'
     },
     refactor: {
-      description:
-        '💻' +
-        ' ' +
-        'A code change that neither fixes a bug nor adds a feature',
+      emoji: '💻',
+      description: 'A code change that neither fixes a bug nor adds a feature',
       title: 'Code Refactoring'
     }
   }
