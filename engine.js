@@ -39,7 +39,6 @@ var filterSubject = function(subject) {
 // fine.
 module.exports = function(options) {
   var types = options.types;
-  console.log(options);
   var length = longest(Object.keys(types)).length + 1;
   var choices = map(types, function(type, key) {
     return {
