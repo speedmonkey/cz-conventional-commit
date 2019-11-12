@@ -7,21 +7,19 @@ var config = configLoader.load();
 var conventionalCommitTypes = {
   types: {
     feat: {
-      description: '💡 A new feature',
+      description: `💡 &nbsp A new feature`,
       title: 'Features'
     },
     fix: {
-      description: '🐛 A bug fix',
+      description: `🐛 &nbsp A bug fix`,
       title: 'Bug Fixes'
     },
     style: {
-      description:
-        '📦 Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)',
+      description: `📦 &nbsp Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)`,
       title: 'Styles'
     },
     refactor: {
-      description:
-        '💻 A code change that neither fixes a bug nor adds a feature',
+      description: `💻 &nbsp A code change that neither fixes a bug nor adds a feature`,
       title: 'Code Refactoring'
     }
   }
